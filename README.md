@@ -27,6 +27,25 @@ npm install
 npx expo start
 ```
 
+### Run on iOS (Simulator)
+
+```bash
+npm run ios
+```
+
+Or start the dev server and press `i` in the Expo CLI.
+
+### Run on iOS (Xcode)
+
+This project uses the Expo managed workflow, so there is no native `ios/` folder until you prebuild it.
+
+```bash
+npx expo prebuild -p ios
+npx expo run:ios
+```
+
+Alternatively, open `ios/SubSense.xcworkspace` in Xcode and press **Run**. If Xcode complains about CocoaPods, run `cd ios && pod install` once.
+
 ## Project Structure
 
 ```
